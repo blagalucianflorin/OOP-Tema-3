@@ -67,4 +67,10 @@ public:
     early_balance_update ();
 };
 
+class wrong_account_type : public account_exception
+{
+public:
+    wrong_account_type ();
+};
+
 #endif //OOP_TEMA_3_2_0_EXCEPTIONS_H

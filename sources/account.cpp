@@ -13,6 +13,13 @@ Account::Account (std::string owner_name) : created (std::time (nullptr))
 
 Account::~Account () = default;
 
+std::istream &operator>> (std::istream &in, Account &my_acc)
+{
+    in >> my_acc . balance;
+    in >> my_acc . owner_name;
+    return (in);
+}
+
 double Account::change_balance (double amount)
 {
     this -> balance += amount;
@@ -48,11 +55,4 @@ time_t Account::get_created () const
 double Account::calc_balance_change (double curr_balance, double percentage)
 {
     return (curr_balance * percentage);
-}
-
-std::istream &operator>> (std::istream &in, Account &my_acc)
-{
-    in >> my_acc . balance;
-    in >> my_acc . owner_name;
-    return (in);
 }

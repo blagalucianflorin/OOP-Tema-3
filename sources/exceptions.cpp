@@ -55,3 +55,8 @@ early_balance_update::early_balance_update ()
 {
     this -> message = "Account_exception: Tried to update the balance of a savings account too soon.";
 }
+
+wrong_account_type::wrong_account_type ()
+{
+    this -> message = "Account_exception: Wrong Account type.";
+}

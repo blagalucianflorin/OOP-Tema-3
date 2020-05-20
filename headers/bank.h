@@ -31,7 +31,7 @@ public:
 
     void add_account (std::string owner_name, float interest_rate, Savings_account::year_interval interest_interval);
 
-    void add_account (Account &my_acc);
+    void add_account (Account *my_acc);
 
     Account &get_account (unsigned long id);
 

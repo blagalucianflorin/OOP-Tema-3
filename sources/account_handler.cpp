@@ -56,10 +56,9 @@ void Account_handler <acc>::add_account (Account &my_acc)
 
     new_acc = dynamic_cast<acc*> (&my_acc);
     if (new_acc == nullptr)
-        std::cout << "failed conversion\n";
+        throw (wrong_account_type ());
     else
     {
-        new_acc -> set_id (current_id);
         this -> accounts . insert (std::make_pair (current_id++, *new_acc));
     }
 }

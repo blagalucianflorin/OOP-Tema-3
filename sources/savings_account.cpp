@@ -28,7 +28,7 @@ std::istream &operator>> (std::istream &in, Savings_account &my_acc)
 {
     std::string aux;
 
-    in >> my_acc;
+    in >> (*dynamic_cast<Account*> (&my_acc));
     in >> my_acc . interest_rate;
     in >> aux;
     if (aux == "QUARTER")

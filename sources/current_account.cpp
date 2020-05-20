@@ -41,7 +41,7 @@ Current_account &Current_account::operator= (const Current_account &old_acc)
 
 std::istream &operator>> (std::istream &in, Current_account &my_acc)
 {
-    in >> my_acc;
+    in >> (*dynamic_cast<Account*> (&my_acc));
     in >> my_acc . deposits;
     in >> my_acc . withdrawals;
     in >> my_acc . tax;

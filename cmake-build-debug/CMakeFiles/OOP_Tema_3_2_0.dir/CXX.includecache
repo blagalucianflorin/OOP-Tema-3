@@ -26,16 +26,6 @@ unordered_map
 iostream
 -
 
-/home/lblaga/CLionProjects/OOP-Tema-3-2.0/headers/bank.h
-account_handler.h
-/home/lblaga/CLionProjects/OOP-Tema-3-2.0/headers/account_handler.h
-string
--
-iostream
--
-utility
--
-
 /home/lblaga/CLionProjects/OOP-Tema-3-2.0/headers/current_account.h
 account.h
 /home/lblaga/CLionProjects/OOP-Tema-3-2.0/headers/account.h
@@ -60,9 +50,7 @@ utility
 iostream
 -
 
-/home/lblaga/CLionProjects/OOP-Tema-3-2.0/sources/bank.cpp
-../headers/bank.h
-/home/lblaga/CLionProjects/OOP-Tema-3-2.0/headers/bank.h
-utility
--
+/home/lblaga/CLionProjects/OOP-Tema-3-2.0/sources/account_handler.cpp
+../headers/account_handler.h
+/home/lblaga/CLionProjects/OOP-Tema-3-2.0/headers/account_handler.h
 
